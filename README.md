@@ -1,4 +1,4 @@
-# intelligence-systems
+# traffic-predictor-keras
 
 Please download the trained model first from the following link, or else the program won't run well.
 https://mega.nz/#!zygnUSra!Fvw1sFiO9PKnWZ7Ya-sgzDqCIjZZSfGyCUg2pb4041o
