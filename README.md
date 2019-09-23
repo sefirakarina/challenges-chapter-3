@@ -2,6 +2,7 @@
 
 <img src="https://github.com/sefirakarina/challenges-chapter-11/blob/master/Capturet.PNG" width="500">
 ## Please download the trained model first from the following, or else the program won't run well.
+
 [link to the model](https://mega.nz/#!zygnUSra!Fvw1sFiO9PKnWZ7Ya-sgzDqCIjZZSfGyCUg2pb4041o)
 
 Put the things in the downloaded folder in the repository you've pulled (put them on the same folder as the python files)
