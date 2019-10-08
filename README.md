@@ -14,6 +14,7 @@ Put the things in the downloaded folder in the repository you've pulled (put the
 - tensorflow
 - numpy
 - PIL (python library)
+- Flask
 
 ### How to start the program
 - go to terminal, cd to the cloned repository
