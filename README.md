@@ -31,6 +31,21 @@ python tryapp.py
 
 ### Concept
 I use convolutional neural network (CNN), which is a part of deep neural network to differentiate the difference between road with traffic jam and clear road. The idea is to make a program that can update user immediately whether there is traffic or not by recognizing the condition of the road. CNN takes an input image, process it and classify it as the given categories. In CNN, the input image that has been processed will be trained, and tested with the layers. In this program, I use convolutional layer, pooling layer, flatten the feature produced from the pooling, and finally end it with the fully connected layer. The details can be seen in the following section.
+#### The Layers
+##### Convolutional
+This layer extract features from an input image. It can can perform operations such as edge detection, blur and sharpen by applying filters. There is strides in the conv2d parameter in keras. Strides is the number of pixels shifts over the input matrix. In this program the strides used is (3x3) and the input shape is (200, 200, 1) because the image shapes are 200x200 and the colors are black and white for all images.
+  
+##### Pooling Layer
+This layer reduces the number of parameters when the image is too large. The layer we used in the coding is Max Pooling. In Max Pooling, the largest element is taken from the rectified feature map.
+
+##### Flatten
+What this step does is flatten the pooled feature from the previous step into a 1D vector like in the picture below. The purpose of this step is to prepare the data for the last step (fully connected layer).
+	
+##### Dense (Fully connected Layer)
+A layer in which every input is connected to every output by a weight, this layer usually comes after pooling layer. This layer takes all neurons in the previous layer and connects it to every single neuron it has. Then, use activation function such as softmax to classify the output (traffic or no traffic).
+
+
+After the training the model, save the model to be used to predict images. To make it easier to simulate, a user interface was made with flask API and html. Basically what happen is user choose an image to be predicted from an html page, the chosen image will be received by the python code that processed the image and predict it using the saved model. Then, the prediction will be shown in the html page along with the image.
 
 ### Architecture
 <img src="https://github.com/sefirakarina/challenges-chapter-11/blob/master/cg9.PNG" width="800"/>
